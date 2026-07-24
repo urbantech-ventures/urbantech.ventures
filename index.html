@@ -167,35 +167,42 @@
         <p class="grotesk pill">city operating systems</p>
         <p class="grotesk pill">autonomous regional mobility</p>
       </div>
-      <div class="text-lg space-y-4">
-        <h1 id="text_1"></h1>
-        <ul class="list-disc list-inside">
-          <li><span class="font-bold">Venture Clienting: </span><span id="text_2"></span></li>
-          <li><span class="font-bold">Go-To-Market: </span><span id="text_3"></span></li>
-          <li><span class="font-bold">Industry Labs: </span><span id="text_4"></span></li>
-        </ul>
-        <h2 id="text_5"></h2>
-        <p id="text_6" class="hidden"></p>
-        <p id="text_11" class="text-lg" ></p>
+      <div class="text-lg space-y-8">
+        <div>
+          <h1 id="text_1"></h1>
+          <h2 id="text_5"></h2>
+        </div>
+        <div>
+          <p id="text_6" class="text-lg font-bold"></p>
+          <ul class="list-disc list-inside">
+            <li><span class="">Venture Clienting</span><span id="text_2"></span></li>
+            <li><span class="">Go-To-Market</span><span id="text_3"></span></li>
+            <li><span class="">Industry Labs</span><span id="text_4"></span></li>
+          </ul>
+        </div>
         <div>
           <p id="text_12" class="text-lg font-bold" ></p>
-          <a target="_blank" class="cursor-pointer underline decoration-dotted" id="text_7" href="https://www.linkedin.com/in/alberto-saruggia/"></a><br> 
-          <a target="_blank" class="cursor-pointer underline decoration-dotted" id="text_8" href="https://www.linkedin.com/in/spdlm/"></a><br>
-          <a target="_blank" class="cursor-pointer underline decoration-dotted" id="text_9" href="https://www.linkedin.com/in/yusukehasegawa/"></a>
+          <a target="_blank" class="cursor-pointer underline decoration-dotted" id="text_7" href="https://www.linkedin.com/in/alberto-saruggia/"></a>&nbsp;&nbsp;
+          <a target="_blank" class="cursor-pointer underline decoration-dotted" id="text_8" href="https://www.linkedin.com/in/spdlm/"></a>&nbsp;&nbsp;
+          <a target="_blank" class="cursor-pointer underline decoration-dotted" id="text_9" href="https://www.linkedin.com/in/yusukehasegawa/"></a>&nbsp;&nbsp;
+          <a target="_blank" class="cursor-pointer underline decoration-dotted" id="text_13" href="https://www.linkedin.com/in/nobuyuki-yamada-55a13339/"></a>
+        </div>
+        <div>
+          <p class="text-lg font-bold hidden" id="text_10"></p>
         </div>
       </div>
-      <div class="grid gap-4">
-        <p class="text-lg font-bold mb-4" id="text_10"></p>
+      <div class="grid gap-4 mt-4 justify-center">
         <div class="flex flex-wrap gap-10 items-center select-none">
-          <a target="_blank" href="https://www.nexstokyo.metro.tokyo.lg.jp"><img class="h-12 w-auto cursor-pointer object-contain" src="https://urbantech.ventures/img/nexs.png" alt="logo"></a>
-          <a target="_blank" href="https://sushitech-startup.metro.tokyo.lg.jp"><img class="h-20 w-auto cursor-pointer object-contain" src="https://urbantech.ventures/img/sushitech.png" alt="logo"></a>
-          <a target="_blank" href="https://www.english.metro.tokyo.lg.jp"><img class="h-10 w-auto cursor-pointer object-contain" src="https://urbantech.ventures/img/tmg.png" alt="logo"></a>
-          <a target="_blank" href="https://tib.metro.tokyo.lg.jp/partner"><img class="h-8 w-auto cursor-pointer object-contain" src="https://urbantech.ventures/img/TIB.png" alt="logo"></a>
+          <a target="_blank" href="https://www.nexstokyo.metro.tokyo.lg.jp"><img class="h-12 w-auto cursor-pointer object-contain grayscale opacity-70" src="https://urbantech.ventures/img/nexs.png" alt="logo"></a>
+          <a target="_blank" href="https://sushitech-startup.metro.tokyo.lg.jp"><img class="h-20 w-auto cursor-pointer object-contain grayscale opacity-70" src="https://urbantech.ventures/img/sushitech.png" alt="logo"></a>
+          <a target="_blank" href="https://www.english.metro.tokyo.lg.jp"><img class="h-10 w-auto cursor-pointer object-contain grayscale opacity-80" src="https://urbantech.ventures/img/tmg.png" alt="logo"></a>
+          <a target="_blank" href="https://tib.metro.tokyo.lg.jp/partner"><img class="h-8 w-auto cursor-pointer object-contain grayscale opacity-70" src="https://urbantech.ventures/img/TIB.png" alt="logo"></a>
           <a target="_blank" href="https://japan.uli.org"><img class="hidden h-14 w-auto cursor-pointer object-contain" src="https://urbantech.ventures/img/uli.png" alt="logo"></a>
         </div>
       </div>
     </div>
     <footer class="flex flex-col items-center select-none">
+      <p class="mb-4"><a class='cursor-pointer underline decoration-dotted grotesk font-normal text-stone-400' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a>&nbsp;&nbsp;<a class='cursor-pointer underline decoration-dotted grotesk font-normal text-stone-400' href='mailto:info@urbantech.ventures'>Email</a></p>
       <p class="grotesk font-normal text-stone-400">Urbantech Ventures &copy; <span class="grotesk font-normal text-stone-400" id="currentYear"></span></p>
       <p id="locationText" class="hidden text-xs text-stone-400">Tokyo Japan</p>
     </footer>
@@ -204,31 +211,33 @@
       
       function changeLanguage(lang) {
           const translations = {
-              en: { text_1: "Urbantech Ventures is a Tokyo-based venture platform focused on built environment technologies and urban innovation. We leverage Japan’s industrial strength to address 4 core urban issues: aging population and labor shortage, digital transformation gap, climate and regulatory pressure, and asset obsolescence risk. Our model engages corporates, startups and institutions to integrate digital and physical solutions. Services:",
-                    text_2: "Corporate procurement and pilot validation of startup solutions.",
-                    text_3: "Advisory services enabling startup commercialization and adoption.",
-                    text_4: "Curated workshops and seminars with institutional partners.", 
+              en: { text_1: "Urbantech Ventures is a Tokyo-based venture platform focused on built environment technologies and urban innovation. We leverage Japan’s industrial strength to address 4 core urban issues: aging population and labor shortage, digital transformation gap, climate and regulatory pressure, and asset obsolescence risk. Our model engages corporates, startups and institutions to integrate digital and physical solutions.",
+                    text_2: ": Corporate procurement and pilot validation.",
+                    text_3: ": Advisory on commercialization and adoption.",
+                    text_4: ": Curated workshops and institutional seminars.", 
                     text_5: "The approach is bottom-up and purpose-built for smart cities, starting from real user needs. Projects are identified, validated, and deployed through direct collaborations with industry stakeholders, while commercial relationships are structured to distribute revenues based on measurable outcomes.",
-                    text_6: "",
+                    text_6: "Services",
                     text_7: "Alberto MG Saruggia",
                     text_8: "Shingo Potier de la Morandi&egravere", 
                     text_9: "Yusuke Hasegawa",
-                    text_10: "Partnerships",
-                    text_11: "Follow us on <a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a> or <a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>send us</a> your pitch.",
+                    text_10: "Contacts",
+                    text_11: "Follow us on  or  your pitch.",
                     text_12: "Team",
+                    text_13: "Ari Druker",
                  },
-              ja: { text_1: "Urbantech Venturesは東京を拠点とするベンチャープラットフォームであり、建築・都市環境分野の技術に注力している。日本の産業基盤の強みを活用し、4つの主要な都市課題に対応する：高齢化と労働力不足、デジタル化の遅れ、気候および規制圧力、資産の陳腐化リスク。当社のモデルは、企業、新興企業、機関を結びつけ、デジタルと物理の解決策を統合する。サービス：",
-                    text_2: "企業による新興企業の技術・解決策の調達および実証検証。",
-                    text_3: "新興企業の事業化と導入を推進する助言業務。",
-                    text_4: "公的機関との連携による選抜型の研修会および講習会。", 
+              ja: { text_1: "Urbantech Venturesは東京を拠点とするベンチャープラットフォームであり、建築・都市環境分野の技術に注力している。日本の産業基盤の強みを活用し、4つの主要な都市課題に対応する：高齢化と労働力不足、デジタル化の遅れ、気候および規制圧力、資産の陳腐化リスク。当社のモデルは、企業、新興企業、機関を結びつけ、デジタルと物理の解決策を統合する。",
+                    text_2: "：企業調達と試験導入の検証。",
+                    text_3: "：事業化と導入に関する助言。",
+                    text_4: "：厳選した研修会と機関向け講習会。", 
                     text_5: "私たちの手法は、実際の利用者のニーズを起点とした下からの積み上げ型であり、次世代都市に特化して設計されています。事業は、産業関係者との直接的な協働を通じて特定・検証・実装され、収益関係は、測定可能な成果に基づいて分配される形で構築されます。",
-                    text_6: "",
-                    text_7: "アルベルト　サルージャ",
+                    text_6: "サービス",
+                    text_7: "アルベルト • サルージャ",
                     text_8: "ポチエ　真悟",
                     text_9: "長谷川　友亮",
-                    text_10: "パートナーシップ",
+                    text_10: "連絡先",
                     text_11: "<a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a>でフォローするか、事業提案を<a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>お送りください</a>。",
                     text_12: "チーム",
+                    text_13: "アリ・ドルーカー",
                   },
                };
       
